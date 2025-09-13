@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send("¡Hola, nube!");
 });
 
+app.get("/soyjs", (req, res) => {
+  res.send("¡Hola, Jeisson Ortiz, bienvenido al sistema!");
+});
+
 // Iniciar servidor
 const PORT = 3000;
 app.listen(PORT, () => {
