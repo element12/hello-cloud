@@ -14,6 +14,10 @@ app.get("/soyjs", (req, res) => {
   res.send("¡Hola, Jeisson Ortiz, bienvenido al sistema!");
 });
 
+app.get("/ping", (_req, res) => {
+  res.json({ pong: true, at: new Date().toISOString() });
+});
+
 // Iniciar servidor
 const PORT = 3000;
 app.listen(PORT, () => {
